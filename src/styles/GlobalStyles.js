@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
+import { COLORS } from './colors';
+import { FONTS } from './fonts';
 import './normalize.css';
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -25,9 +27,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        font-family: sans-serif;
+        user-select: none;
         margin: 0;
-        background-color: #333;
+        background-color: ${COLORS.dark};
+        font-family: ${FONTS.poppins};
     }
 
 `;
